@@ -1,2 +1,3 @@
 # Loja-Online
- Projeto de uma Loja online feito com Html e CSS
+Pequeno projeto em HTML5 e CSS3 para simular uma loja online
+Em breve irei adicionar JavaScript
