@@ -20,8 +20,19 @@ nav {
     background-color: black;
 }
 
+#grid-nav{
+    display: grid;
+    margin: 0 auto;
+    gap: 10px;
+    row-gap: 30px;
+    min-width: 100%;
+    max-width: 100%;
+    
+}
+
 nav > a {
     text-decoration: none;
+    text-align: right;
 }
 
 nav > div > input {
@@ -31,11 +42,6 @@ nav > div > input {
     margin-bottom: 10px;
 }
 
-#search{
-    text-align: center;
-
-}
-
 .grid {
     min-width: 300px;
     max-width: 1000px;
@@ -43,7 +49,7 @@ nav > div > input {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     display: grid;
-    gap: 15px;
+    gap: 10px;
     row-gap: 30px;
 }
 
@@ -51,21 +57,26 @@ nav > div > input {
     padding: 30px;
 }
 
-.menu{
-    grid-column-start: 1;
-    grid-column-end: 4;
-    padding: 12px;
-
-}
-
-.menu > a {
+.caixa-login {
+    width: 150px;
     padding: 10px;
     text-decoration: none;
+    text-align: center;
     font-weight: bold;
     transition-duration: 0.5s;
+    grid-column: 16;
+    grid-row: 3;
+
+    
 }
 
-.menu > a:hover{
+.caixa-busca{
+    grid-column: 10;
+    grid-row: 3;
+
+}
+
+.caixa-login:hover{
     background-color: darkgray;
     color: gray;
     text-decoration: underline;
