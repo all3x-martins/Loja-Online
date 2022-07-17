@@ -19,17 +19,20 @@ header > input {
 
 .grid-header{
     display: grid;
-    background-color: #244064;
-    color: rgb(0, 0, 0);
+    padding-bottom: 30px;
     margin-bottom: 40px;
+    background-color: #244064;
+    color: rgb(255, 255, 255);
+    
     
 }
 
 .logo{
     padding: 10px;
+    padding-top: 20px;
+    padding-left: 20px;
     grid-column: 1;
     grid-row: 1;
-    row-gap: 35px;
     width: 80px;
 
 }
@@ -40,45 +43,64 @@ header > input {
 
 }
 
-.caixa-login {
-    color: white;
-    width: 100px;
-    height: 30px;
-    padding: 10px;
-    padding-top: 40px;
-    text-decoration: none;
-    font-weight: bold;
-    transition-duration: 0.5s;
-    grid-column: 15;
-    grid-row: 1;
 
+.svg {
+    fill: currentColor;
+    margin-top: 21px;
+    margin-right: -18px;
+    width: 30px;
+    color: white;
+   
     
 }
 
-.caixa-login:hover{
-    color: gray;
-    text-decoration: underline;
+#svg{
+    grid-column: 14;
+    grid-row: 1;
 }
 
-#carrinho{
-    width: 150px;
-    height: 50px;
+.login {
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    grid-column: 15;
+    grid-row: 1;
+    font-size: 13px;
+    align-items: center;
+    text-transform: uppercase;
+    
+}
+
+#login{
+    padding-top: 20px;
+}
+
+.carrinho{
+    width: 170px;
+    height: 40px;
+    padding-top: 20px;
+    margin-top: 10px;
     text-align: center;
     text-decoration: none;
-    padding: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
     background-color: green;
-    color: white;
     border-radius: 10px;
     transition-duration: 0.5s;
     grid-column: 16;
     grid-row: 1;
 
 }
-#carrinho:hover{
+
+.carrinho:hover{
     background-color: rgb(3, 93, 3);
     border-radius: 10px;
+
+}
+
+#carrinho{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 10px;
 
 }
 
