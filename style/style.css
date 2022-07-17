@@ -8,26 +8,82 @@ body {
     background-color: rgb(230, 230, 230);
 }
 
-.titulo{
-    padding-top: 40px;
-    padding-bottom: 40px;
-    text-align: center;
-    background-color: black;
+header > input {
+    width: 700px;
+    height: 60px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+   
+}
+
+.grid-header{
+    display: grid;
+    background-color: #244064;
+    color: rgb(0, 0, 0);
+    margin-bottom: 40px;
+    
+}
+
+.logo{
+    padding: 10px;
+    grid-column: 1;
+    grid-row: 1;
+    row-gap: 35px;
+    width: 80px;
+
+}
+
+.caixa-busca{
+    grid-column: 13;
+    grid-row: 2;
+
+}
+
+.caixa-login {
     color: white;
+    width: 100px;
+    height: 30px;
+    padding: 10px;
+    padding-top: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+    grid-column: 15;
+    grid-row: 1;
+
+    
+}
+
+.caixa-login:hover{
+    color: gray;
+    text-decoration: underline;
+}
+
+#carrinho{
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+    grid-column: 16;
+    grid-row: 1;
+
+}
+#carrinho:hover{
+    background-color: rgb(3, 93, 3);
+    border-radius: 10px;
+
 }
 
 nav {
-    background-color: black;
-}
-
-#grid-nav{
-    display: grid;
-    margin: 0 auto;
-    gap: 10px;
-    row-gap: 30px;
-    min-width: 100%;
-    max-width: 100%;
-    
+    background-color: #244064;
 }
 
 nav > a {
@@ -35,14 +91,13 @@ nav > a {
     text-align: right;
 }
 
-nav > div > input {
-    width: 400px;
-    height: 40px;
-    border-radius: 10px;
-    margin-bottom: 10px;
+.grid-nav{
+    display: grid;
+    margin: 0 auto;
+    
 }
 
-.grid {
+.grid-body{
     min-width: 300px;
     max-width: 1000px;
     margin: 0 auto;
@@ -53,36 +108,9 @@ nav > div > input {
     row-gap: 30px;
 }
 
-.grid div {
+.grid-body div {
     padding: 30px;
 }
-
-.caixa-login {
-    width: 150px;
-    padding: 10px;
-    text-decoration: none;
-    text-align: center;
-    font-weight: bold;
-    transition-duration: 0.5s;
-    grid-column: 16;
-    grid-row: 3;
-
-    
-}
-
-.caixa-busca{
-    grid-column: 10;
-    grid-row: 3;
-
-}
-
-.caixa-login:hover{
-    background-color: darkgray;
-    color: gray;
-    text-decoration: underline;
-    border-radius: 5px;
-}
-
 
 .caixa1{
     grid-column: 1;
