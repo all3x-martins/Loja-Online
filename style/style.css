@@ -2,130 +2,136 @@
     margin: 0;
     padding: 0;
     border: 0;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
     background-color: rgb(230, 230, 230);
-}
 
-header > input {
-    width: 700px;
-    height: 60px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    padding: 10px;
-   
 }
 
 .grid-header{
+    position: fixed;
     display: grid;
-    padding-bottom: 30px;
+    width: 100%;
     margin-bottom: 40px;
-    background-color: #244064;
+    padding-bottom: 30px;
     color: rgb(255, 255, 255);
-    
+    background-color: #303030;
     
 }
 
+header > form > input {
+    width: 700px;
+    height: 60px;
+    margin: 35px 0px 10px;
+    padding: 10px;
+    color: white;
+    background-color: #424242;
+    border-radius: 10px;
+    font-size: medium;
+   
+}
+
+.button {
+    position: fixed;
+    display: inline-block;
+    width: 2.25rem;
+    margin: -24px 0px 0px -45px;
+    color: white;
+    fill: currentColor;
+    cursor: pointer;
+
+}
+
+.search{
+    grid-column: 10;
+    grid-row: 1;
+
+}
+
 .logo{
+    width: 210px;
     padding: 10px;
     padding-top: 20px;
     padding-left: 20px;
     grid-column: 1;
     grid-row: 1;
-    width: 80px;
+    
 
 }
-
-.caixa-busca{
-    grid-column: 13;
-    grid-row: 2;
-
-}
-
 
 .svg {
-    fill: currentColor;
-    margin-top: 21px;
-    margin-right: -18px;
     width: 30px;
+    margin-right: -12px;
+    margin-top: 45px;
+    fill: currentColor;
     color: white;
-   
     
 }
 
 #svg{
     grid-column: 14;
     grid-row: 1;
+
 }
 
 .login {
     color: white;
     text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
     transition-duration: 0.5s;
     grid-column: 15;
     grid-row: 1;
-    font-size: 13px;
-    align-items: center;
-    text-transform: uppercase;
+    
     
 }
 
 #login{
+    margin-top: 25px;
     padding-top: 20px;
 }
 
 .carrinho{
     width: 170px;
     height: 40px;
+    margin-top: 30px;
     padding-top: 20px;
-    margin-top: 10px;
-    text-align: center;
-    text-decoration: none;
     background-color: green;
     border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
     transition-duration: 0.5s;
     grid-column: 16;
     grid-row: 1;
 
 }
 
-.carrinho:hover{
+.carrinho:hover {
     background-color: rgb(3, 93, 3);
     border-radius: 10px;
 
 }
 
-#carrinho{
-    color: white;
-    text-decoration: none;
-    text-align: center;
+#carrinho {
     padding-top: 10px;
-
-}
-
-nav {
-    background-color: #244064;
-}
-
-nav > a {
+    color: white;
+    text-align: center;
     text-decoration: none;
-    text-align: right;
+
 }
 
-.grid-nav{
+.div-1 {
+    margin-bottom: 100px;
+}
+
+.grid-body {
     display: grid;
-    margin: 0 auto;
-    
-}
-
-.grid-body{
     min-width: 300px;
     max-width: 1000px;
     margin: 0 auto;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    display: grid;
+    padding-top: 110px;
     gap: 10px;
     row-gap: 30px;
 }
@@ -134,70 +140,134 @@ nav > a {
     padding: 30px;
 }
 
-.caixa1{
-    grid-column: 1;
-    grid-row: 3;
+.card1 {
     width: 50%;   
     background-color: white;
     border-radius: 10px;
+    grid-column: 1;
+    grid-row: 3;
 
 }
 
-.caixa2{
+.card2 {
+    width: 50%;
+    background-color: white;
+    border-radius: 10px;
     grid-column: 1;
     grid-row: 4;
+    
+}
+
+.card3 {
     width: 50%;
     background-color: white;
     border-radius: 10px;
-}
-
-.caixa3{
     grid-column-start : 2;
     grid-row-end: 5;
+    
+}
+
+.card4 {
     width: 50%;
     background-color: white;
     border-radius: 10px;
+    grid-column-start: 2;
+    grid-row-end: 4;
+   
+} 
+
+.card5 {
+    width: 50%;
+    background-color: white;
+    border-radius: 10px;
+    grid-column-start: 3;
+    grid-row-end: 4;
 
 }
 
-.caixa4{
-    grid-column-start: 2;
-    grid-row-end: 4;
+.card6 {
     width: 50%;
     background-color: white;
     border-radius: 10px;
+    grid-column-start: 3;
+    grid-row-end: 5;
 
-}  
+}
 
 #destaques {
     margin: 0 auto;    
 }
 
 #destaques > img{
-    width: 200px;
-    height: 200px;
+    width: 100%;
+
 }
 
-aside input {
+.prod {
+    color: #303030;
+    font-size: 0.75rem;
+    text-decoration: none;
+
+}
+
+.ticard {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    color: black;
+}
+
+.preco {
+    margin-bottom: 0.25rem;
+    margin-top: 0.25rem;
+    color: #00a202;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    font-weight: 700;
+}
+
+.txcard {
+    display: flex;
+    align-items: center;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 400;
+    height: 0.75rem;
+    color: rgb(127, 133, 141);
+
+}
+
+
+footer {
+    margin-top: 10px;
+    color: white;
+    background-color: #424242;
+    text-align: center;
+    
+}
+
+footer input {
     width: 200px;
     height: 30px;
     border-radius: 10px 0px 0px 10px;
+    
 }
-aside button {
-    background-color: blue;
-    color: white;
+footer button {
     width: 70px;
     height: 30px;
+    color: white;
+    background-color: blue;
     border-radius: 0px 10px 10px 0px;
+
 }
+
 .contato{
     text-align: center;
     
 }
 
-footer {
-    text-align: center;
-    background-color: black;
-    color: white;
-    margin-top: 10px;
+.rodape {
+    background-color: #424242;
+
 }
