@@ -1,8 +1,15 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: "Poppins", sans-serif;
+    
 }
 
 body {
@@ -10,101 +17,95 @@ body {
 
 }
 
-.grid-header{
-    position: fixed;
-    display: grid;
-    width: 100%;
-    margin-bottom: 40px;
-    padding-bottom: 30px;
+header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 0px;
     color: rgb(255, 255, 255);
     background-color: #303030;
     
 }
 
-header > form > input {
+.enviar-pesquisa {
+    position:absolute;
+    top:0; right:0;
+    z-index:10;
+    border:none;
+    background:transparent;
+    outline:none;
+
+}
+  
+.pesquisa {
+    position: relative;
     width: 700px;
-    height: 60px;
-    margin: 35px 0px 10px;
-    padding: 10px;
-    color: white;
-    background-color: #424242;
+    box-shadow: #00000073 2px 2px 20px;
     border-radius: 10px;
-    font-size: medium;
-   
 }
-
-.button {
-    position: fixed;
-    display: inline-block;
-    width: 2.25rem;
-    margin: -24px 0px 0px -45px;
+  
+.pesquisa input {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    padding-left: 5px;
+    background-color: #424242;
     color: white;
-    fill: currentColor;
-    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
 
 }
 
-.search{
-    grid-column: 10;
-    grid-row: 1;
+.icone-svg-pesquisa {  
+    width: 25px;
+    padding: 9px;
+    padding-top: 11px;
+    fill: currentColor;
+    color: white;
+
+}
+
+
+button {
+    color: white;
+    cursor: pointer;
 
 }
 
 .logo{
     width: 210px;
-    padding: 10px;
-    padding-top: 20px;
-    padding-left: 20px;
-    grid-column: 1;
-    grid-row: 1;
-    
 
 }
 
-.svg {
+.svg-conta {
+    display: flex;
+    position: absolute;
+    margin-left: -33px;
     width: 30px;
-    margin-right: -12px;
-    margin-top: 45px;
     fill: currentColor;
     color: white;
     
-}
-
-#svg{
-    grid-column: 14;
-    grid-row: 1;
-
+    
 }
 
 .login {
     color: white;
     text-decoration: none;
     font-size: 13px;
+    font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     transition-duration: 0.5s;
-    grid-column: 15;
-    grid-row: 1;
     
     
-}
-
-#login{
-    margin-top: 25px;
-    padding-top: 20px;
 }
 
 .carrinho{
-    width: 170px;
-    height: 40px;
-    margin-top: 30px;
-    padding-top: 20px;
-    background-color: green;
+    background-color: #00a202;
+    width: 160px;
+    height: 60px;
     border-radius: 10px;
-    text-align: center;
-    text-decoration: none;
-    transition-duration: 0.5s;
-    grid-column: 16;
-    grid-row: 1;
+    box-shadow: rgba(0, 0, 0, 0.429) 2px 2px 10px;
 
 }
 
@@ -115,15 +116,12 @@ header > form > input {
 }
 
 #carrinho {
-    padding-top: 10px;
     color: white;
-    text-align: center;
-    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: none;    
 
-}
-
-.div-1 {
-    margin-bottom: 100px;
 }
 
 .grid-body {
@@ -131,7 +129,6 @@ header > form > input {
     min-width: 300px;
     max-width: 1000px;
     margin: 0 auto;
-    padding-top: 110px;
     gap: 10px;
     row-gap: 30px;
 }
@@ -144,6 +141,7 @@ header > form > input {
     width: 50%;   
     background-color: white;
     border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
     grid-column: 1;
     grid-row: 3;
 
@@ -153,6 +151,7 @@ header > form > input {
     width: 50%;
     background-color: white;
     border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
     grid-column: 1;
     grid-row: 4;
     
@@ -162,6 +161,7 @@ header > form > input {
     width: 50%;
     background-color: white;
     border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
     grid-column-start : 2;
     grid-row-end: 5;
     
@@ -171,6 +171,7 @@ header > form > input {
     width: 50%;
     background-color: white;
     border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
     grid-column-start: 2;
     grid-row-end: 4;
    
@@ -180,6 +181,7 @@ header > form > input {
     width: 50%;
     background-color: white;
     border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
     grid-column-start: 3;
     grid-row-end: 4;
 
@@ -189,6 +191,7 @@ header > form > input {
     width: 50%;
     background-color: white;
     border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
     grid-column-start: 3;
     grid-row-end: 5;
 
@@ -259,6 +262,13 @@ footer button {
     color: white;
     background-color: blue;
     border-radius: 0px 10px 10px 0px;
+
+}
+
+.menu-final {
+    margin-top: 4em ;
+    display: flex;
+    align-content: space-between;
 
 }
 

@@ -7,31 +7,45 @@
     <title>PC Master</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+    
 </head>
 <body>
-    <header class="grid-header">
-        <img class="logo" src="Imagens/logo.png" alt="logo">
+    <header class="container-header">
+        <div><img class="logo" src="Imagens/logo.png" alt="logo">
+        </div>
 
-        <form action="" class="search">
-            <input  type="search" type="text"placeholder="Digite o que você procura ">
-            <button>
-                <svg class="button" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
-            </button>
-        </form>
+        <div>
+            <form action="">
+                <div class="pesquisa">
+                    <input type="search" type="text"  placeholder="Digite o que você procura"/>
+                    <button class="enviar-pesquisa" type="submit">
+                        <svg class="icone-svg-pesquisa" viewBox="0 0 512 512"><path d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"/></svg>
+                    </button>
+                </div>
+            </form>
+        </div>
         
 
-        <svg class="svg" id="svg" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"></path></svg>
+        <div>
+            <div>
+                <svg class="svg-conta" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"></path></svg>
+            </div>
+            <div class="login">
+                <a href="login.html"> </a><span class="conta">Minha conta<br><strong><a class="login" href="login.html">Entrar</a> / <a class="login" href="/account/register">Cadastro</a></strong></span>
+            </div>
+        </div>
 
-        <div id="login" class="login"><a  href="login.html"> </a><span class="conta">Minha conta<br><strong><a class="login" href="login.html">Entrar</a> / <a class="login" href="/account/register">Cadastro</a></strong></span></div>
+        <button class="carrinho">
+            <a id="carrinho" href=""><i class="fa-solid fa-cart-shopping"></i> CARRINHO</a>
 
-        <div class="carrinho"><a id="carrinho" href=""><i class="fa-solid fa-cart-shopping"></i> CARRINHO</a></div>
+        </button>
 
     </header>
 
     <div class="grid-body">
         
         <div id="destaques" class="card1">
-            <img src="Imagens/placa-mae-asrock-b450m-steel-legend-amd-am4-matx-ddr4-90-mxb9y0-a0uayz_placa-mae-asrock-b450m-steel-legend-amd-am4-matx-ddr4-90-mxb9y0-a0uayz_1552586908_gg.jpg" alt="">
+            <img src="Imagens/placa-mae-asrock-b450m-steel-legend-amd-am4-matx-ddr4-90-mxb9y0-a0uayz_placa-mae-asrock-b450m-steel-legend-amd-am4-matx-ddr4-90-mxb9y0-a0uayz_1552586908_gg.jpg" alt="placa mae asrock b450m steel legend amd am4">
             <a class="prod" href="">
                 <h2><span class="ticard">Placa-Mãe ASRock B450M Steel Legend, AMD AM4, mATX, DDR4</span></h2>
                 <br>
@@ -41,7 +55,7 @@
             </a>
         </div>
         <div id="destaques" class="card2">
-            <img src="Imagens/Fonte-Atx-500W-80-Plus-Bronze-Pfc-Ativo-Nx500-Nexus-Gamer-Kit-Com-30-Unidades_1652818173_gg.jpg" alt="">
+            <img src="Imagens/Fonte-Atx-500W-80-Plus-Bronze-Pfc-Ativo-Nx500-Nexus-Gamer-Kit-Com-30-Unidades_1652818173_gg.jpg" alt="Fonte Atx 500w 80 Plus Bronze Pfc Ativo">
             <a class="prod" href="">
                 <h2><span class="ticard">Fonte Atx, 500W, 80 Plus, Bronze, Pfc Ativo Nx500 - Nexus Gamer - Kit Com 30 Unidades</span></h2>
                 <br>
@@ -55,7 +69,7 @@
     
         <div id="destaques" class="card3"> 
             <img src="Imagens/Placa-De-Video-Asus-Geforce-Rtx-3090-Oc-24gb-Ddr6-384-Bits-Rog-strix-rtx3090-o24g-gaming_1658346521_gg.jpg" alt="">
-            <a class="prod" href="">
+            <a class="prod" href="Placa De Video Asus Geforce Rtx 3090 Oc 24gb Ddr6 384 Bits Rog strix">
                 <h2><span class="ticard">Placa De Video Asus, Geforce, Rtx 3090, Oc 24gb, Ddr6, 384 Bits, - Rog-strix-rtx3090-o24g-gaming</span></h2>
                 <br>
                 <span class="preco">R$ 26.999,99</span>
@@ -67,7 +81,7 @@
 
         <div id="destaques" class="card4">
             <img src="Imagens/Processador-AMD-Ryzen-9-5950X-72MB-3-4GHz-4-9GHz-AM4_1656002799_gg.jpg" alt="">
-            <a class="prod" href="">
+            <a class="prod" href="Processador AMD Ryzen 9 5950X">
                 <h2><span class="ticard">Processador AMD Ryzen 9 5950X, 72MB, 3.4GHz 4.9GHz, AM4</span></h2>
                 <br>
                 <span class="preco">R$ 3.576,51</span>
@@ -79,7 +93,7 @@
 
         <div id="destaques" class="card5">
             <img src="Imagens/memoria-corsair-dominator-rgb-32gb-2x16gb-5600mhz-ddr5-cl36-preto-cmt32gx5m2x5600c36_1639584058_gg.jpg" alt="">
-            <a class="prod" href="">
+            <a class="prod" href="memoria corsair dominator rgb 32gb 2x16gb 5600mhz ddr5">
                 <h2><span class="ticard">Memória Corsair Dominator, RGB, 32GB (2x16GB), 5600MHz, DDR5, CL36, Preto</span></h2>
                 <br>
                 <span class="preco">R$ 2.704,90</span>
@@ -91,7 +105,7 @@
 
         <div id="destaques" class="card6">
             <img src="Imagens/SSD-M-2-Gigabyte-Aorus-Gen4-2TB-5000mbs_1657654008_gg.jpg" alt="">
-            <a class="prod" href="">
+            <a class="prod" href="SSD M2 Gigabyte Aorus Gen4 2TB">
                 <h2><span class="ticard">SSD M.2, Gigabyte, Aorus Gen4, 2TB, 5000mbs</span></h2>
                 <br>
                 <span class="preco">R$ 4.311,90</span>
@@ -104,18 +118,71 @@
     </div>
 
    <footer>
-        <div class="contato">
-            Telefone: (21) 2006-5448 
-            <br>
-            E-mail: loja@gmail.com
-            <br>
-            Instagram: @Lojinha
-        </div>
-
-        <div class="contato">
-            <h3>Receba nossas novidades</h3>
-            <input type="email" class="inputemail" placeholder="Digite seu email">
-            <button>Enviar</button>
+    
+        <div class="menu-final">
+            <div>
+                <h4>Institucional</h4>
+                <ul>
+                    <li>
+                        <a href="">Quem somos</a>
+                    </li>
+                    <li>
+                        <a href="">Localização</a>
+                    </li>
+                    <li>
+                        <a href="">Nossas Lojas</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4>Dúvidas</h4>
+                <ul>
+                    <li>
+                        <a href="">Entrega</a>
+                    </li>
+                    <li>
+                        <a href="">Garantia</a>
+                    </li>
+                    <li>
+                        <a href="">Como comprar</a>
+                    </li>
+                    <li>
+                        <a href="">Formas de Pagamento</a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank">Sobre Boletos</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4>Ajuda</h4>
+                <ul>
+                    <li>
+                        <a href="">SAC</a>
+                    </li>
+                    <li>
+                        <a href="">Fale conosco</a>
+                    </li>
+                    <li>
+                        <a href="">Termos de aceite</a>
+                    </li>
+                    <li>
+                        <a href="">Políticas de Privacidade</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contato">
+                Telefone: (21) 2006-5448
+                <br>
+                E-mail: loja@gmail.com
+                <br>
+                Instagram: @Lojinha
+            </div>
+            <div class="contato">
+                <h3>Receba nossas novidades</h3>
+                <input type="email" class="inputemail" placeholder="Digite seu email">
+                <button>Enviar</button>
+            </div>
         </div>
 
         <div class="rodape">
