@@ -140,6 +140,21 @@ aside button {
     height: 30px;
     border-radius: 0px 10px 10px 0px;
 }
+<<<<<<< Updated upstream
+=======
+
+.menu-final {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.menu-final > div > ul {
+    flex-direction: column;
+    list-style: none;
+}
+
+>>>>>>> Stashed changes
 .contato{
     text-align: center;
     
