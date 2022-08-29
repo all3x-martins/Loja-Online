@@ -5,88 +5,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 
-*{
+html, body {
     margin: 0;
     padding: 0;
-    border: 0;
-    
-}
-
-body {
-    background-color: rgb(230, 230, 230);
+    box-sizing: border-box;
+    text-decoration: none;   
 
 }
 
-header {
-    position: relative;
+header ul {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 30px 0px;
-    color: rgb(255, 255, 255);
-    background-color: #303030;
+    text-decoration: none;
+    list-style: none;
+    align-items: baseline;
+
+}
+
+header li {
+    padding: 20px;
     
 }
 
-.enviar-pesquisa {
-    position:absolute;
-    top:0; right:0;
-    z-index:10;
-    border:none;
-    background:transparent;
-    outline:none;
-
-}
-  
-.pesquisa {
-    position: relative;
-    width: 700px;
-    box-shadow: #00000073 2px 2px 20px;
-    border-radius: 10px;
-}
-  
-.pesquisa input {
-    width: 100%;
-    height: 50px;
-    border-radius: 10px;
-    padding-left: 5px;
-    background-color: #424242;
+a {
+    text-decoration: none;
     color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: medium;
+    font-weight: bolder;
 
 }
 
-.icone-svg-pesquisa {  
-    width: 25px;
-    padding: 9px;
-    padding-top: 11px;
-    fill: currentColor;
-    color: white;
-
-}
-
-
-button {
-    color: white;
-    cursor: pointer;
-
-}
-
-.logo{
-    width: 210px;
-
-}
-
-.svg-conta {
-    display: flex;
-    position: absolute;
-    margin-left: -33px;
-    width: 30px;
-    fill: currentColor;
-    color: white;
-    
-    
+header  button {
+   background-color: #00a202;
+   width: 160px;    
+   height: 60px;    
+   border-radius: 10px;
+   box-shadow: rgba(0, 0, 0, 0.429) 2px 2px 10px;
+   border-style: none;
 }
 
 .login {
@@ -96,112 +49,135 @@ button {
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     transition-duration: 0.5s;
-    
+    align-self: baseline;
     
 }
 
-.carrinho{
-    background-color: #00a202;
-    width: 160px;
-    height: 60px;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.429) 2px 2px 10px;
-
-}
-
-.carrinho:hover {
+header button:hover {
     background-color: rgb(3, 93, 3);
     border-radius: 10px;
 
 }
 
-#carrinho {
+.busca {
+    width: 65vw;
+    height: 55px;
+    box-shadow: #00000073 2px 2px 20px;
+    border-radius: 10px;
+    align-self: end;
+}
+
+input {
+    width: 100%;
+    height: 55px;
+    border-style: none;
+    border-radius: 10px;
+    padding-left: 5px;
+    background-color: #424242;
     color: white;
     font-family: 'Roboto', sans-serif;
-    font-size: 17px;
-    font-weight: 700;
-    text-decoration: none;    
+    font-size: medium;
+}
+
+header {
+    display: flex;
+    background-color: #303030;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
 
 }
 
-.grid-body {
-    display: grid;
-    min-width: 300px;
-    max-width: 1000px;
-    margin: 0 auto;
-    gap: 10px;
-    row-gap: 30px;
-}
-
-.grid-body div {
-    padding: 30px;
-}
-
-.card1 {
-    width: 50%;   
-    background-color: white;
-    border-radius: 10px;
-    font-family: 'Poppins', sans-serif;
-    grid-column: 1;
-    grid-row: 3;
-
-}
-
-.card2 {
-    width: 50%;
-    background-color: white;
-    border-radius: 10px;
-    font-family: 'Poppins', sans-serif;
-    grid-column: 1;
-    grid-row: 4;
+.logo {
+    width: 220px;
+    padding: 20px ;
+    
     
 }
 
-.card3 {
-    width: 50%;
-    background-color: white;
-    border-radius: 10px;
-    font-family: 'Poppins', sans-serif;
-    grid-column-start : 2;
-    grid-row-end: 5;
+.menu-div {
+    display: flex;
+    color: whitesmoke;
+    text-decoration: none;
     
 }
 
-.card4 {
-    width: 50%;
-    background-color: white;
-    border-radius: 10px;
-    font-family: 'Poppins', sans-serif;
-    grid-column-start: 2;
-    grid-row-end: 4;
-   
+.menu-nav {
+    display: flex;
+    background-color: #303030;
+    padding: 0px 20px 15px 20px;
+    justify-content: space-between;
+}
+
+.menu-nav ul {
+    list-style: none;
+}
+
+
+
+.mobile-menu{
+    display: block;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 19px;
+    padding: 16px;
 } 
 
-.card5 {
-    width: 50%;
+.nav-list {
+    display: none;
+    position: absolute;
+    top: 26vh;
+    left: 0;
+    width: 27vw;
+    height: 77vh;
+    background-color: #303030;
+    flex-direction: column;
+    transition: transform 0.1s ease-in;
+    
+}
+
+.nav-list h3 {
+    color: white;
+    opacity: 0;
+}
+
+.nav-list li {
+    padding: 10px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+
+.nav-list.active {
+    display: flex;
+    
+}
+
+main {
+    background-color: rgb(230, 230, 230);
+   
+}
+
+.conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+}
+
+.destaques {
+    width: 25%;  
+    min-height: 100px; 
+    margin: 10px;
+    padding: 10px;
     background-color: white;
     border-radius: 10px;
     font-family: 'Poppins', sans-serif;
-    grid-column-start: 3;
-    grid-row-end: 4;
-
+    
 }
 
-.card6 {
-    width: 50%;
-    background-color: white;
-    border-radius: 10px;
-    font-family: 'Poppins', sans-serif;
-    grid-column-start: 3;
-    grid-row-end: 5;
-
-}
-
-#destaques {
-    margin: 0 auto;    
-}
-
-#destaques > img{
+.destaques > img{
     width: 100%;
 
 }
@@ -213,7 +189,7 @@ button {
 
 }
 
-.ticard {
+.nome-produto {
     font-size: 0.875rem;
     line-height: 1.125rem;
     font-weight: 600;
@@ -230,7 +206,7 @@ button {
     font-weight: 700;
 }
 
-.txcard {
+.tx-card {
     display: flex;
     align-items: center;
     font-size: 0.75rem;
@@ -241,9 +217,7 @@ button {
 
 }
 
-
 footer {
-    margin-top: 10px;
     color: white;
     background-color: #424242;
     text-align: center;
@@ -256,6 +230,7 @@ footer input {
     border-radius: 10px 0px 0px 10px;
     
 }
+
 footer button {
     width: 70px;
     height: 30px;
@@ -266,10 +241,13 @@ footer button {
 }
 
 .menu-final {
-    margin-top: 4em ;
     display: flex;
-    align-content: space-between;
+    justify-content: space-between;
+    
+}
 
+.menu-final > div > ul {
+    flex-direction: column;
 }
 
 .contato{
@@ -280,4 +258,51 @@ footer button {
 .rodape {
     background-color: #424242;
 
+}
+
+
+@media (max-width: 480px) {
+    
+    .logo {
+        width: 60px;
+    }
+
+    .conteudo {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 520px) {
+    .logo {
+        width: 60px;
+    }
+
+    .conteudo {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .destaques {
+        width: 90%;  
+       
+    }
+
+    .mobile-menu{
+        font-size: 15px;
+    }  
+
+   
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
