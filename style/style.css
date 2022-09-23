@@ -240,24 +240,62 @@ footer button {
 
 }
 
+footer .sessao-final {
+    text-align: left;
+}
+
 .menu-final {
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    align-items: baseline;
+    padding-right: 50px;
+    
     
 }
 
-.menu-final > div > ul {
-    flex-direction: column;
+.inst {
+    color: #e90313;
+    margin: 0;
+    margin-bottom: 0px;
+    padding: 0;
+    position: relative;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.duv {
+    color: #e90313;
+    margin: 0;
+    margin-bottom: 0px;
+    padding: 0;
+    position: relative;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    text-transform: uppercase; 
+}
+
+.aju {
+    color: #e90313;
+    margin: 0;
+    margin-bottom: 0px;
+    padding: 0;
+    position: relative;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.lista-footer {
+    margin: 0;
+    padding: 0;
     list-style: none;
-    justify-content: space-around;
-    
-}
-
-.contato{
-    text-align: center;
-    
 }
 
 .rodape {
