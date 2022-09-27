@@ -248,6 +248,10 @@ footer button {
 
 }
 
+footer button:hover {
+    background-color: #946d11;
+}
+
 .titulo-sessao {   
     color: white;
     margin: 0;
@@ -257,7 +261,6 @@ footer button {
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 1rem;
-    padding-bottom: 1rem;
     text-transform: uppercase;
 }
 
