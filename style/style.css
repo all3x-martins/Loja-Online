@@ -73,7 +73,7 @@ input {
     border-style: none;
     border-radius: 10px;
     padding-left: 5px;
-    background-color: #424242;
+    background-color: #606060;
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: medium;
@@ -224,10 +224,17 @@ footer {
     
 }
 
-footer input {
+.inputemail {
     width: 200px;
     height: 30px;
     border-radius: 10px 0px 0px 10px;
+    border-style: none;
+    padding-left: 5px;
+   margin-top: 5px;
+    background-color: #606060;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
     
 }
 
@@ -235,9 +242,23 @@ footer button {
     width: 70px;
     height: 30px;
     color: white;
-    background-color: blue;
+    background-color: #A87A11;
+    border: none;
     border-radius: 0px 10px 10px 0px;
 
+}
+
+.titulo-sessao {   
+    color: white;
+    margin: 0;
+    margin-bottom: 0px;
+    padding: 0;
+    position: relative;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
 }
 
 footer .sessao-final {
@@ -249,53 +270,16 @@ footer .sessao-final {
     justify-content: space-between;
     padding: 10px;
     padding-right: 50px;
+    font-family: "Poppins", sans-serif !important;
     
-    
-}
-
-.inst {
-    color: #e90313;
-    margin: 0;
-    margin-bottom: 0px;
-    padding: 0;
-    position: relative;
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-    text-transform: uppercase;
-}
-
-.duv {
-    color: #e90313;
-    margin: 0;
-    margin-bottom: 0px;
-    padding: 0;
-    position: relative;
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-    text-transform: uppercase; 
-}
-
-.aju {
-    color: #e90313;
-    margin: 0;
-    margin-bottom: 0px;
-    padding: 0;
-    position: relative;
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-    text-transform: uppercase;
 }
 
 .lista-footer {
     margin: 0;
     padding: 0;
     list-style: none;
+    font-weight: 200;
+    font-size: 0.875rem;
 }
 
 .rodape {
