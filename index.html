@@ -1,29 +1,19 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="Pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< Updated upstream
-    <title>Minha Loja Online</title>
-    <link rel="stylesheet" href="style/style.css">
-</head>
-<body>
-    <header class="titulo">
-    <h1>Loja Online</h1>   
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, tenetur!</p> 
-=======
     <title>PC - Master</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
-    <link rel="stylesheet" href="/style/style.css">
-    <link rel="shortcut icon" href="/Imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="/imagens/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header class="cabecalho">
         <a href="">
             <picture>
-                <source media="(max-width: 520px)" srcset="Imagens/logo-p.png">
-                <img class="logo" src="Imagens/logo.png" alt="logo">
+                <source media="(max-width: 520px)" srcset="imagens/logo-p.png">
+                <img class="logo" src="imagens/logo.png" alt="logo">
             </picture>
         </a> 
         
@@ -37,59 +27,242 @@
                 </li>
             </ul>
         </div>
->>>>>>> Stashed changes
     </header>
-
-    <nav>
-        <div id="grid-nav" class="caixa-menu">
-            <a class="caixa-login" href="login.html">Minha Conta</a>
-
-            <input class="caixa-busca" type="search" type="text" placeholder="Digite o que você procura">
+    <nav class="menu-nav">
+            <button class="mobile-menu"><i style="padding-right: 7px;" class="fa-solid fa-bars"></i>TODOS OS DEPARTAMENTOS<i style="padding-left: 7px;" class="fa-solid fa-angle-right"></i></button>
+            <ul class="nav-list" role="menu">
+                <h3>CATEGORIAS</h3>
+                <li><a href="#">Hardware</a></li>
+                <li><a href="#">Monitores</a></li>
+                <li><a href="#">Periféricos</a></li>
+                <li><a href="#">Computadores</a></li>
+                <li><a href="#">Rede & Wireless</a></li>
+                <li><a href="#">Notebooks e portáteis</a></li>
+                <li><a href="">Kit Upgrade</a></li>
+                <h3>AJUDA E CONFIGURAÇÕES</h3>
+                <li><a href="#">Minha Conta</a></li>
+                <li><a href="#">Quem Somos</a></li>
+                <li><a href="#">Atendimento ao Cliente</a></li>
+            </ul>
+        <div class="busca">
+            <input type="search" name="" id="search" placeholder="Digite o que você procura">
         </div>
     </nav>
+    <main>
+        <div class="conteudo">
+        
+            <div class="destaques">
+                <img src="imagens/placa-mae-asrock-b450m-steel-legend-amd-am4-matx-ddr4-90-mxb9y0-a0uayz_placa-mae-asrock-b450m-steel-legend-amd-am4-matx-ddr4-90-mxb9y0-a0uayz_1552586908_gg.jpg" alt="placa mae asrock b450m steel legend amd am4">
+                <a class="prod" href="">
+                    <h2><span class="nome-produto">Placa-Mãe ASRock B450M Steel Legend, AMD AM4, mATX, DDR4</span></h2>
+                    <br>
+                    <span class="preco">R$ 799,90</span>
+                    <br>
+                    <span class="tx-card">À vista no PIX</span>
 
-    <div class="grid">
-        <div id="destaques" class="caixa1">
-            <img src="Imagens/Gift1.jpg" alt="">
-            <h3>R$10.00</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id consequuntur deserunt iure perferendis alias architecto enim reprehenderit unde accusantium eveniet, ab laudantium labore beatae iste neque vero. Aperiam, voluptas unde.</p></div>
+                </a>
+            </div>
+            <div class="destaques">
+                <img src="imagens/Fonte Corsair RMx Series RM850x, 850W, Full Modular, 80 Plus Gold.jpg" alt="Fonte Corsair RMx Series RM850x, 850W, Full Modular, 80 Plus Gold">
+                <a class="prod" href="">
+                    <h2><span class="nome-produto">Fonte Corsair RMx Series RM850x, 850W, Full Modular, 80 Plus Gold</span></h2>
+                    <br>
+                    <span class="preco">R$ 949,99</span>
+                    <br>
+                    <span class="tx-card">À vista no PIX</span>
     
-        <div id="destaques" class="caixa2">
-            <img src="Imagens/Gift2.jpg" alt="">
-            <h3>R$20.00</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id consequuntur deserunt iure perferendis alias architecto enim reprehenderit unde accusantium eveniet, ab laudantium labore beatae iste neque vero. Aperiam, voluptas unde.</p>
-        </div>
+                </a>
+                
+            </div>
+        
+            <div class="destaques"> 
+                <img src="imagens/Placa-De-Video-Asus-Geforce-Rtx-3090-Oc-24gb-Ddr6-384-Bits-Rog-strix-rtx3090-o24g-gaming_1658346521_gg.jpg" alt="">
+                <a class="prod" href="Placa De Video Asus Geforce Rtx 3090 Oc 24gb Ddr6 384 Bits Rog strix">
+                    <h2><span class="nome-produto">Placa De Video Asus, Geforce, Rtx 3090, Oc 24gb, Ddr6, 384 Bits, - Rog-strix-rtx3090-o24g-gaming</span></h2>
+                    <br>
+                    <span class="preco">R$ 26.999,99</span>
+                    <br>
+                    <span class="tx-card">À vista no PIX</span>
     
-        <div id="destaques" class="caixa3"> 
-            <img src="Imagens/Gift1.jpg" alt="">
-            <h3>R$30.00</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id consequuntur deserunt iure perferendis alias architecto enim reprehenderit unde accusantium eveniet, ab laudantium labore beatae iste neque vero. Aperiam, voluptas unde.</p></div>
+                </a>
+            </div>
+    
+            <div class="destaques">
+                <img src="imagens/Processador-AMD-Ryzen-9-5950X-72MB-3-4GHz-4-9GHz-AM4_1656002799_gg.jpg" alt="">
+                <a class="prod" href="Processador AMD Ryzen 9 5950X">
+                    <h2><span class="nome-produto">Processador AMD Ryzen 9 5950X, 72MB, 3.4GHz 4.9GHz, AM4</span></h2>
+                    <br>
+                    <span class="preco">R$ 3.576,51</span>
+                    <br>
+                    <span class="tx-card">À vista no PIX</span>
+    
+                </a>
+            </div>
+    
+            <div class="destaques">
+                <img src="imagens/memoria-corsair-dominator-rgb-32gb-2x16gb-5600mhz-ddr5-cl36-preto-cmt32gx5m2x5600c36_1639584058_gg.jpg" alt="">
+                <a class="prod" href="memoria corsair dominator rgb 32gb 2x16gb 5600mhz ddr5">
+                    <h2><span class="nome-produto">Memória Corsair Dominator, RGB, 32GB (2x16GB), 5600MHz, DDR5, CL36, Preto</span></h2>
+                    <br>
+                    <span class="preco">R$ 2.704,90</span>
+                    <br>
+                    <span class="tx-card">À vista no PIX</span>
+    
+                </a>
+            </div>
+    
+            <div class="destaques">
+                <img src="imagens/SSD-M-2-Gigabyte-Aorus-Gen4-2TB-5000mbs_1657654008_gg.jpg" alt="">
+                <a class="prod" href="SSD M2 Gigabyte Aorus Gen4 2TB">
+                    <h2><span class="nome-produto">SSD M.2, Gigabyte, Aorus Gen4, 2TB, 5000mbs</span></h2>
+                    <br>
+                    <span class="preco">R$ 4.311,90</span>
+                    <br>
+                    <span class="tx-card">À vista no PIX</span>
+    
+                </a>
+            </div>
+    
+            <div class="destaques">
+                <img src="imagens/Monitor Gamer MSI Optix G272, 27, IPS, Full HD, 1ms, 144Hz.jpg" alt="Monitor Gamer MSI Optix G272, 27, IPS, Full HD, 1ms, 144Hz">
+                <a class="prod" href="">
+                    <h2><span class="nome-produto">Monitor Gamer MSI Optix G272, 27, IPS, Full HD, 1ms, 144Hz</span></h2>
+                    <br>
+                    <span class="preco">R$ 1.775,00</span>
+                    <br>
+                    <span class="tx-card">À vista no PIX</span>
 
-        <div id="destaques" class="caixa4">
-            <img src="Imagens/Gift2.jpg" alt="">
-            <h3>R$40.00</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id consequuntur deserunt iure perferendis alias architecto enim reprehenderit unde accusantium eveniet, ab laudantium labore beatae iste neque vero. Aperiam, voluptas unde.</p>
+                </a>
+            </div>
+            <div class="destaques">
+                <img src="imagens/Combo Gamer Redragon S125W, Teclado Mecanico, Mouse 12400DPI, Headset, RGB, Branco.jpg" alt="Combo Gamer Redragon S125W, Teclado Mecanico, Mouse 12400DPI, Headset, RGB, Branco">
+                <a class="prod" href="">
+                    <h2><span class="nome-produto">Combo Gamer Redragon S125W, Teclado Mecanico, Mouse 12400DPI, Headset, RGB, Branco</span></h2>
+                    <br>
+                    <span class="preco">R$ 724,90</span>
+                    <br>
+                    <span class="tx-card">À vista no PIX</span>
+    
+                </a>
+                
+            </div>
+        
+            <div class="destaques"> 
+                <img src="imagens/Kit Ventoinhas NZXT AER RGB 2, 2x140mm.jpg" alt="">
+                <a class="prod" href="Kit Ventoinhas NZXT AER RGB 2, 2x140mm">
+                    <h2><span class="nome-produto">Kit Ventoinhas NZXT AER RGB 2, 2x140mm</span></h2>
+                    <br>
+                    <span class="preco">R$ 649,90</span>
+                    <br>
+                    <span class="tx-card">À vista no PIX</span>
+    
+                </a>
+            </div>
+    
+            <div class="destaques">
+                <img src="imagens/HD Seagate Skyhawk.jpg" alt="">
+                <a class="prod" href="HD Seagate Skyhawk AI, 8TB, 3.5, 7200 RPM, Sata III 6GB/s, Cache 256MB">
+                    <h2><span class="nome-produto">HD Seagate Skyhawk AI, 8TB, 3.5, 7200 RPM, Sata III 6GB/s, Cache 256MB</span></h2>
+                    <br>
+                    <span class="preco">R$ 1.699,90</span>
+                    <br>
+                    <span class="tx-card">À vista no PIX</span>
+    
+                </a>
+            </div>
+    
+            <div class="destaques">
+                <img src="imagens/Teclado Mecanico Logitech G915 TKL Tactile RGB Branco.jpg" alt="">
+                <a class="prod" href="Teclado Mecanico Logitech G915 TKL Tactile RGB Branco">
+                    <h2><span class="nome-produto">Teclado Mecanico Logitech G915 TKL Tactile RGB Branco</span></h2>
+                    <br>
+                    <span class="preco">R$ 1.199,90</span>
+                    <br>
+                    <span class="tx-card">À vista no PIX</span>
+    
+                </a>
+            </div>
+    
+            <div class="destaques">
+                <img src="imagens/Water Cooler Cooler Master.jpg" alt="">
+                <a class="prod" href="Water Cooler Cooler Master">
+                    <h2><span class="nome-produto">Water Cooler Cooler Master MasterLiquid ML240 Illusion, RGB, 240mms</span></h2>
+                    <br>
+                    <span class="preco">R$ 689,90</span>
+                    <br>
+                    <span class="tx-card">À vista no PIX</span>
+    
+                </a>
+            </div>
         </div>
-
-    </div>
+    </main>
 
     <aside>
-        <div class="contato">
-            Telefone: (21) 2006-5448 
-            <br>
-            E-mail: loja@gmail.com
-            <br>
-            Instagram: @Lojinha
-        </div>
-        <div class="contato">
-            <h3>Receba nossas novidades</h3>
-            <input type="email" class="inputemail" placeholder="Digite seu email">
-            <button>Enviar</button>
-        </div>
+        
     </aside>
 
-    <footer class="rodape">
-        <p>Site feito por <a href="https://github.com/all3x-martins" target="_blank">Allexander</a></p>
+    <footer>
+        <div class="menu-final">
+            <div class="sessao-final">
+                <h4 class="titulo-sessao">Institucional</h4>
+                <ul class="lista-footer">
+                    <li>
+                        <a href="">Quem somos</a>
+                    </li>
+                    <li>
+                        <a href="">Localização</a>
+                    </li>
+                    <li>
+                        <a href="">Nossas Lojas</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sessao-final">
+                <h4 class="titulo-sessao">Dúvidas</h4>
+                <ul class="lista-footer">
+                    <li>
+                        <a href="">Entrega</a>
+                    </li>
+                    <li>
+                        <a href="">Garantia</a>
+                    </li>
+                    <li>
+                        <a href="">Como comprar</a>
+                    </li>
+                    <li>
+                        <a href="">Formas de Pagamento</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sessao-final">
+                <h4 class="titulo-sessao">Ajuda </h4>
+                <ul class="lista-footer">
+                    <li>
+                        <a href="">SAC</a>
+                    </li>
+                    <li>
+                        <a href="">Fale conosco</a>
+                    </li>
+                    <li>
+                        <a href="">Termos de aceite</a>
+                    </li>
+                    <li>
+                        <a href="">Políticas de Privacidade</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contato">
+                <h4 class="titulo-sessao ">Newsletter</h4>
+                <h3>Receba ofertas exclusivas no seu e-mail</h3>
+                <input type="email" class="inputemail" placeholder="Digite seu email">
+                <button>Enviar</button>
+            </div>
+        </div>
+
+        <div class="rodape">
+            <p>Site feito por <a href="https://github.com/all3x-martins" target="_blank">Allexander</a></p>
+        </div>
     </footer>
 </body>
+<script src="menu.js"></script>
 </html>
