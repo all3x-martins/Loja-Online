@@ -2,15 +2,128 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja Online</title>
+    <title>Login - PC Master</title>
+    
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Link para fontes externas -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" 
+          integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" 
+          crossorigin="anonymous">
+
+    <link rel="icon" href="/assets/imagens/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <div>
-        <input type="email" placeholder="Digite o seu Email">
+
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+        <a href="#">
+            <picture>
+                <source media="(max-width: 520px)" srcset="/assets/imagens/logo-p.png">
+                <img class="logo" src="/assets/imagens/logo.png" alt="Logo PC Master">
+            </picture>
+        </a> 
         
-        <input type="password" placeholder="Digite a sua senha">
-    </div>
+        <div class="menu-div">
+            <ul class="lista">
+                <li>
+                    <a href="/pages/login.html" class="login">Minha conta</a><br>
+                    <strong>
+                        <a href="/pages/login.html" class="login">Entrar</a> / 
+                        <a href="#" class="login">Cadastro</a>
+                    </strong>
+                </li>
+                <li>
+                    <button><a href="#">Carrinho</a></button>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Menu de Navegação -->
+    <nav class="menu-nav">
+        <button class="mobile-menu">
+            <i class="fa-solid fa-bars"></i> TODOS OS DEPARTAMENTOS <i class="fa-solid fa-angle-right"></i>
+        </button>
+        <ul class="nav-list" role="menu">
+            <h3>CATEGORIAS</h3>
+            <li><a href="#">Hardware</a></li>
+            <li><a href="#">Monitores</a></li>
+            <li><a href="#">Periféricos</a></li>
+            <li><a href="#">Computadores</a></li>
+            <li><a href="#">Rede & Wireless</a></li>
+            <li><a href="#">Notebooks e portáteis</a></li>
+            <li><a href="#">Kit Upgrade</a></li>
+            <h3>AJUDA E CONFIGURAÇÕES</h3>
+            <li><a href="#">Minha Conta</a></li>
+            <li><a href="#">Quem Somos</a></li>
+            <li><a href="#">Atendimento ao Cliente</a></li>
+        </ul>
+    </nav>
+
+    <!-- Formulário de Login -->
+    <main>
+        <section class="login-container">
+            <div class="login-form">
+                <h2>Entrar na sua conta</h2>
+                <form action="#" method="POST">
+                    <div class="input-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Senha:</label>
+                        <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+                    </div>
+                    <button type="submit" class="btn-login">Entrar</button>
+                </form>
+                <div class="links">
+                    <a href="#">Esqueceu a senha?</a><br>
+                    <a href="cadastro.html">Criar conta</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="menu-final">
+            <div class="sessao-final">
+                <h4 class="titulo-sessao">Institucional</h4>
+                <ul class="lista-footer">
+                    <li><a href="#">Quem somos</a></li>
+                    <li><a href="#">Localização</a></li>
+                    <li><a href="#">Nossas Lojas</a></li>
+                </ul>
+            </div>
+            <div class="sessao-final">
+                <h4 class="titulo-sessao">Dúvidas</h4>
+                <ul class="lista-footer">
+                    <li><a href="#">Entrega</a></li>
+                    <li><a href="#">Garantia</a></li>
+                    <li><a href="#">Como comprar</a></li>
+                    <li><a href="#">Formas de Pagamento</a></li>
+                </ul>
+            </div>
+            <div class="sessao-final">
+                <h4 class="titulo-sessao">Ajuda</h4>
+                <ul class="lista-footer">
+                    <li><a href="#">SAC</a></li>
+                    <li><a href="#">Fale conosco</a></li>
+                    <li><a href="#">Termos de aceite</a></li>
+                    <li><a href="#">Políticas de Privacidade</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="rodape">
+            <p>Site feito por <a href="https://github.com/all3x-martins" target="_blank" rel="noopener noreferrer">Allexander</a></p>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
 </body>
 </html>
