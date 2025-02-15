@@ -18,4 +18,5 @@ Este é um pequeno projeto desenvolvido com HTML5, CSS3 e JavaScript para simula
 - **Melhorar a acessibilidade para garantir compatibilidade com leitores de tela.**
   
 # 📸 Demonstração.
-![Print](https://user-images.githubusercontent.com/85321713/187113467-76d81b4c-bb70-453e-9b2e-c08c4ed135c2.png)
+![Screenshot](https://github.com/user-attachments/assets/31051e94-f017-4476-8e1c-82763886abb7)
+
