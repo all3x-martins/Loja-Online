@@ -1,18 +1,16 @@
-/* Reset de margens e paddings */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    text-decoration: none;
 }
 
-/* Corpo e fundo */
 body {
     background-color: #f4f4f9;
     color: #333;
 }
 
-/* Cabeçalho */
 .cabecalho {
     display: flex;
     justify-content: space-between;
@@ -47,19 +45,22 @@ body {
     color: #00a202;
 }
 
-.menu-div button {
-    background-color: transparent;
+.btn-carrinho {
+    background-color: #009e2a;
     border: none;
-    color: white;
+    color: #ffffff;
+    text-decoration:none ;
     font-size: 1rem;
     cursor: pointer;
+    border-radius: 10px;
+    padding: 25px;
+
 }
 
-.menu-div button:hover {
-    color: #00a202;
+.btn-carrinho:hover {
+    color: #dddddd;
 }
 
-/* Navegação */
 .menu-nav {
     background-color: #222;
     padding: 20px;
@@ -112,86 +113,93 @@ body {
     font-size: 1rem;
     outline: none;
 }
-main {
-    background-color: rgb(230, 230, 230);
-   
+
+/* Estilização da seção de Cards dos Produtos */
+.produtos {
+    margin: 20px auto;
+    width: 90%;
+    background-color: #f8f8f8;
 }
 
 .conteudo {
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin: 0 auto;
     flex-wrap: wrap;
+    gap: 25px;
 
 }
 
-.destaques {
-    width: 25%;  
-    min-height: 500px; 
-    margin: 10px;
-    padding: 10px;
+.card {
     background-color: white;
-    border-radius: 10px;
-    font-family: 'Poppins', sans-serif;
+    width: 326px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.destaques > img{
-    width: 90%;
-
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.prod {
-    color: #303030;
-    font-size: 0.75rem;
-    text-decoration: none;
-
+.card img {
+    width: 85%;
+    height: 270px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
 }
 
-.nome-produto {
-    font-size: 0.875rem;
-    line-height: 1.125rem;
-    font-weight: 600;
-    margin-top: 0.5rem;
-    color: black;
+.card .prod {
+    padding: 20px;
 }
 
-.preco {
-    margin-bottom: 0.25rem;
-    margin-top: 0.25rem;
-    color: #00a202;
+.card h2 {
     font-size: 1.25rem;
-    line-height: 1.875rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.card .produto_preco {
+    font-size: 1.5rem;
+    color: #00a202;
     font-weight: 700;
 }
 
-.tx-card {
-    display: flex;
-    align-items: center;
-    font-size: 0.75rem;
-    line-height: 1rem;
-    font-weight: 400;
-    height: 0.75rem;
-    color: rgb(127, 133, 141);
-
+.card .produto_pagamento {
+    font-size: 1rem;
+    color: #777;
 }
 
-/* Contato */
-.contato {
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilização da seção de Newsletter */
+.newsletter {
     background-color: #222;
     color: white;
     padding: 30px 20px;
     text-align: center;
 }
 
-.contato .titulo-sessao {
+.newsletter_title {
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
-.contato form input {
+.newsletter_form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.newsletter_input {
     padding: 10px;
     margin: 10px 0;
     width: 250px;
@@ -200,7 +208,7 @@ main {
     outline: none;
 }
 
-.contato form button {
+.newsletter_button {
     padding: 10px 20px;
     background-color: #00a202;
     color: white;
@@ -210,65 +218,64 @@ main {
     transition: background-color 0.3s ease;
 }
 
-.contato form button:hover {
+.newsletter_button:hover {
     background-color: #007f16;
 }
 
-/* Footer */
+/* Estilização do Footer */
 footer {
     background-color: #1a1a1a;
     color: white;
     padding: 40px 20px;
 }
 
-.menu-final {
+.footer_menu {
     display: flex;
     justify-content: space-between;
     gap: 40px;
     margin-bottom: 40px;
 }
 
-.sessao-final {
+.footer_section {
     flex: 1;
 }
 
-.sessao-final h4 {
+.footer_section-title {
     font-size: 1.25rem;
     margin-bottom: 15px;
 }
 
-.lista-footer {
+.footer_list {
     list-style: none;
     font-size: 1rem;
 }
 
-.lista-footer li {
+.footer_list li {
     margin-bottom: 10px;
 }
 
-.lista-footer a {
+.footer_list a {
     color: white;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.lista-footer a:hover {
+.footer_list a:hover {
     color: #00a202;
 }
 
-.rodape {
+.footer_bottom {
     text-align: center;
 }
 
-.rodape a {
+.footer_bottom a {
     color: #00a202;
     text-decoration: none;
 }
 
-.rodape a:hover {
+.footer_bottom a:hover {
     color: white;
 }
-
 
 /* Responsividade */
 @media (max-width: 768px) {
@@ -288,7 +295,7 @@ footer {
         gap: 20px;
     }
 
-    .produto {
+    .card {
         width: 90%;
     }
 
@@ -298,7 +305,7 @@ footer {
 }
 
 @media (max-width: 480px) {
-    .produto {
+    .card {
         width: 100%;
     }
 
