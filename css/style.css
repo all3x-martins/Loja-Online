@@ -11,7 +11,7 @@ body {
     color: #333;
 }
 
-.cabecalho {
+.site_header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,21 +19,63 @@ body {
     padding: 15px 20px;
 }
 
-.cabecalho .logo {
+.site_header .site_logo {
     max-width: 200px;
 }
 
-.menu-div .lista {
+/* O menu de navegação está sempre oculto */
+.navigation_menu .nav-list {
+    display: none; 
+    flex-direction: column;
+    position: absolute;
+    top: 276px; 
+    left: 0;
+    background-color: #303030;
+    z-index: 10; 
+}
+
+/* O botão de menu (hambúrguer) */
+.navigation_menu .mobile_menu_button {
+    display: block;
+    text-align: left;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* O campo de busca sempre visível */
+.navigation_menu .search_bar {
+    display: block;
+    width: 100%;
+    padding: 10px 20px; 
+    background-color: #303030;
+}
+
+/* O menu de navegação aparece quando a classe "show" é adicionada */
+.navigation_menu .nav-list.show {
+    display: flex; 
+    padding: 10px; 
+    width: 20%;
+    gap: 15px;
+    
+}
+
+.header_menu .menu_items {
     list-style: none;
     display: flex;
     gap: 20px;
+    align-items: center;
 }
 
-.menu-div .lista li {
+.header_menu .menu_items li {
     color: white;
 }
 
-.menu-div .login {
+.header_menu .account_link {
     color: white;
     text-decoration: none;
     font-size: 1rem;
@@ -41,7 +83,7 @@ body {
     transition: color 0.3s;
 }
 
-.menu-div .login:hover {
+.header_menu .account_link:hover {
     color: #00a202;
 }
 
@@ -53,43 +95,43 @@ body {
     font-size: 1rem;
     cursor: pointer;
     border-radius: 10px;
-    padding: 25px;
+    padding: 30px 60px;
 
 }
 
-.btn-carrinho:hover {
+.svg_icon {
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
+    font-size: 1.5rem;
+   
+}
+
+.btn-carrinho a {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.btn-carrinho a:hover {
     color: #dddddd;
+
 }
 
-.menu-nav {
-    background-color: #222;
+.navigation_menu {
+    background-color: #1a1a1a;
     padding: 20px;
 }
 
-.menu-nav .mobile-menu {
-    display: none;
-    background-color: transparent;
-    color: white;
-    border: none;
-    font-size: 1.2rem;
-    font-weight: 500;
-    cursor: pointer;
-}
-
-.menu-nav .nav-list {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    list-style: none;
-}
-
-.menu-nav .nav-list h3 {
+.category_title {
     color: white;
     font-size: 1.25rem;
     margin-bottom: 10px;
 }
 
-.menu-nav .nav-list a {
+.navigation_menu .nav-list a {
     color: #aaa;
     text-decoration: none;
     font-size: 1rem;
@@ -97,15 +139,15 @@ body {
     transition: color 0.3s;
 }
 
-.menu-nav .nav-list a:hover {
+.navigation_menu .nav-list a:hover {
     color: #00a202;
 }
 
-.menu-nav .busca {
+.navigation_menu .search_bar {
     margin-top: 20px;
 }
 
-.menu-nav .busca input {
+.navigation_menu .search_bar input {
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
@@ -152,7 +194,7 @@ body {
     border-bottom: 1px solid #eee;
 }
 
-.card .prod {
+.card .product_link {
     padding: 20px;
 }
 
@@ -240,7 +282,7 @@ footer {
     flex: 1;
 }
 
-.footer_section-title {
+.footer_section_title {
     font-size: 1.25rem;
     margin-bottom: 15px;
 }
@@ -279,11 +321,11 @@ footer {
 
 /* Responsividade */
 @media (max-width: 768px) {
-    .menu-nav .nav-list {
+    .navigation_menu .nav-list {
         display: none;
     }
 
-    .menu-nav .mobile-menu {
+    .navigation_menu .mobile_menu_button {
         display: block;
         width: 100%;
         text-align: left;
@@ -314,51 +356,14 @@ footer {
     }
 }
 
-/* O menu de navegação está sempre oculto */
-.menu-nav .nav-list {
-    display: none; 
-    flex-direction: column;
-    position: absolute;
-    top: 60px; 
-    left: 0;
-    width: 100%;
-    background-color: #303030;
-    z-index: 10; 
-    padding-top: 10px; 
-}
-
-/* O botão de menu (hambúrguer) */
-.menu-nav .mobile-menu {
-    display: block;
-    width: 100%;
-    text-align: left;
-    padding: 10px;
-}
-
-/* O campo de busca sempre visível */
-.menu-nav .busca {
-    display: block;
-    width: 100%;
-    padding: 10px 20px; 
-    background-color: #303030;
-}
-
-/* O menu de navegação aparece quando a classe "show" é adicionada */
-.menu-nav .nav-list.show {
-    display: flex; 
-    padding: 10px; 
-    width: 20%;
-    margin-top: 5.5%;
-}
-
 /* Estilos adicionais para o menu de navegação em telas pequenas */
 @media (max-width: 768px) {
-    .menu-nav .nav-list {
+    .navigation_menu .nav-list {
         width: 100%;
         top: 120px; 
     }
 
-    .menu-nav .mobile-menu {
+    .navigation_menu .mobile_menu_button {
         font-size: 18px;
     }
 }
