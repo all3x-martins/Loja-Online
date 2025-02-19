@@ -14,50 +14,55 @@
 <body>
 
     <!-- Cabeçalho -->
-    <header class="cabecalho">
-        <a href="../index.html">
+    <header class="site_header">
+        <a href="/index.html">
             <picture>
-                <source media="(max-width: 520px)" srcset="../assets/imagens/logo-p.png">
-                <img class="logo" src="../assets/imagens/logo.png" alt="Logo PC Master">
+                <source media="(max-width: 520px)" srcset="assets/imagens/logo-p.png">
+                <img class="site_logo" src="../assets/imagens/logo.png" alt="Logo PC Master">
             </picture>
         </a> 
         
-        <div class="menu-div">
-            <ul class="lista">
+        <div class="header_menu">
+            <ul class="menu_items">
                 <li>
-                    <a href="../pages/login.html" class="login">Minha conta</a><br>
+                    <span>Minha conta</span>
+                    <br>
                     <strong>
-                        <a href="../pages/login.html" class="login">Entrar</a> / 
-                        <a href="cadastro.html" class="login">Cadastro</a>
+                        <a href="login.html" class="account_link">Entrar</a> / 
+                        <a href="cadastro.html" class="account_link">Cadastro</a>
                     </strong>
                 </li>
                 <li>
-                    <button><a href="#">Carrinho</a></button>
+                    <button class="btn-carrinho">
+                        <a href="#">
+                        <svg class="svg_icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"></path></svg>
+                        Carrinho</a>
+                    </button>
                 </li>
             </ul>
         </div>
     </header>
 
     <!-- Menu de Navegação -->
-    <nav class="menu-nav">
-        <button id="menu-toggle" class="mobile-menu">☰ TODOS OS DEPARTAMENTOS</button>
-            <ul id="nav-list" class="nav-list" role="menu">
-                <h3>CATEGORIAS</h3>
-                <li><a href="#">Hardware</a></li>
-                <li><a href="#">Monitores</a></li>
-                <li><a href="#">Periféricos</a></li>
-                <li><a href="#">Computadores</a></li>
-                <li><a href="#">Rede & Wireless</a></li>
-                <li><a href="#">Notebooks e portáteis</a></li>
-                <li><a href="#">Kit Upgrade</a></li>
-                <h3>AJUDA E CONFIGURAÇÕES</h3>
-                <li><a href="#">Minha Conta</a></li>
-                <li><a href="#">Quem Somos</a></li>
-                <li><a href="#">Atendimento ao Cliente</a></li>
-            </ul>
-            <div class="busca">
-                <input type="search" id="search" placeholder="Digite o que você procura">
-            </div>
+    <nav class="navigation_menu">
+        <div class="search_bar">
+            <input type="search" id="search" placeholder="Digite o que você procura">
+        </div>
+        <button id="menu-toggle" class="mobile_menu_button">☰ TODOS OS DEPARTAMENTOS</button>
+        <ul id="nav-list" class="nav-list" role="menu">
+            <li class="category_title"><h3>CATEGORIAS</h3></li>
+            <li><a href="#">Hardware</a></li>
+            <li><a href="#">Monitores</a></li>
+            <li><a href="#">Periféricos</a></li>
+            <li><a href="#">Computadores</a></li>
+            <li><a href="#">Rede & Wireless</a></li>
+            <li><a href="#">Notebooks e portáteis</a></li>
+            <li><a href="#">Kit Upgrade</a></li>
+            <li class="category_title"><h3>AJUDA E CONFIGURAÇÕES</h3></li>
+            <li><a href="#">Minha Conta</a></li>
+            <li><a href="#">Quem Somos</a></li>
+            <li><a href="#">Atendimento ao Cliente</a></li>
+        </ul>
     </nav>
     <!-- Formulário de Cadastro -->
     <main>
@@ -92,27 +97,27 @@
 
     <!-- Rodapé -->
     <footer>
-        <div class="menu-final">
-            <div class="sessao-final">
-                <h4 class="titulo-sessao">Institucional</h4>
-                <ul class="lista-footer">
+        <div class="footer_menu">
+            <div class="footer_section">
+                <h4 class="footer_section_title">Institucional</h4>
+                <ul class="footer_list">
                     <li><a href="#">Quem somos</a></li>
                     <li><a href="#">Localização</a></li>
                     <li><a href="#">Nossas Lojas</a></li>
                 </ul>
             </div>
-            <div class="sessao-final">
-                <h4 class="titulo-sessao">Dúvidas</h4>
-                <ul class="lista-footer">
+            <div class="footer_section">
+                <h4 class="footer_section_title">Dúvidas</h4>
+                <ul class="footer_list">
                     <li><a href="#">Entrega</a></li>
                     <li><a href="#">Garantia</a></li>
                     <li><a href="#">Como comprar</a></li>
                     <li><a href="#">Formas de Pagamento</a></li>
                 </ul>
             </div>
-            <div class="sessao-final">
-                <h4 class="titulo-sessao">Ajuda</h4>
-                <ul class="lista-footer">
+            <div class="footer_section">
+                <h4 class="footer_section_title">Ajuda</h4>
+                <ul class="footer_list">
                     <li><a href="#">SAC</a></li>
                     <li><a href="#">Fale conosco</a></li>
                     <li><a href="#">Termos de aceite</a></li>
@@ -120,12 +125,12 @@
                 </ul>
             </div>
         </div>
-
-        <div class="rodape">
-            <p>Site feito por <a href="https://github.com/all3x-martins" target="_blank" rel="noopener noreferrer">Allexander</a></p>
+    
+        <div class="footer_bottom">
+        <p>Desenvolvido por <a href="https://github.com/all3x-martins" target="_blank" rel="noopener noreferrer">Allexander</a></p>
         </div>
     </footer>
 
-    <script src="../js/script.js"></script>
+   
 </body>
 </html>
