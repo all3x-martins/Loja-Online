@@ -23,8 +23,8 @@ body {
     max-width: 200px;
 }
 
-/* O menu de navegação está sempre oculto */
-.navigation_menu .nav-list {
+/* menu de navegação */
+.navigation_menu .nav_list {
     display: none; 
     flex-direction: column;
     position: absolute;
@@ -56,12 +56,11 @@ body {
 }
 
 /* O menu de navegação aparece quando a classe "show" é adicionada */
-.navigation_menu .nav-list.show {
+.navigation_menu .nav_list.show {
     display: flex; 
     padding: 10px; 
     width: 20%;
     gap: 15px;
-    
 }
 
 .header_menu .menu_items {
@@ -96,7 +95,6 @@ body {
     cursor: pointer;
     border-radius: 10px;
     padding: 30px 60px;
-
 }
 
 .svg_icon {
@@ -104,7 +102,6 @@ body {
     width: 1em;
     height: 1em;
     font-size: 1.5rem;
-   
 }
 
 .btn-carrinho a {
@@ -117,7 +114,6 @@ body {
 
 .btn-carrinho a:hover {
     color: #dddddd;
-
 }
 
 .navigation_menu {
@@ -131,7 +127,7 @@ body {
     margin-bottom: 10px;
 }
 
-.navigation_menu .nav-list a {
+.navigation_menu .nav_list a {
     color: #aaa;
     text-decoration: none;
     font-size: 1rem;
@@ -139,7 +135,7 @@ body {
     transition: color 0.3s;
 }
 
-.navigation_menu .nav-list a:hover {
+.navigation_menu .nav_list a:hover {
     color: #00a202;
 }
 
@@ -163,15 +159,14 @@ body {
     background-color: #f8f8f8;
 }
 
-.conteudo {
+.card_container {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    gap: 25px;
-
+    gap: 20px;
+    justify-content: center;
 }
 
-.card {
+.produtos .card {
     background-color: white;
     width: 326px;
     border-radius: 8px;
@@ -181,41 +176,35 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.card img {
+.produtos .card img {
     width: 85%;
     height: 270px;
     object-fit: cover;
     border-bottom: 1px solid #eee;
 }
 
-.card .product_link {
+.produtos .card .product_link {
     padding: 20px;
 }
 
-.card h2 {
+.produtos .card h2 {
     font-size: 1.25rem;
     color: #333;
     margin: 10px 0;
 }
 
-.card .produto_preco {
+.produtos .card .produto_preco {
     font-size: 1.5rem;
     color: #00a202;
     font-weight: 700;
 }
 
-.card .produto_pagamento {
+.produtos .card .produto_pagamento {
     font-size: 1rem;
     color: #777;
 }
 
-.card:hover {
+.produtos .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
