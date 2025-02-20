@@ -7,16 +7,7 @@ Este é um pequeno projeto desenvolvido com HTML5, CSS3 e JavaScript para simula
 # 🚀 Tecnologias utilizadas
 - **HTML5: Estrutura semântica do projeto.**
 - **CSS3: Estilização e design responsivo.**
-- **JavaScript: Preparado para interatividade futura.**
-
-# 📚 Melhorias futuras
-- **Implementar um carrinho de compras:**
-  - **Adicionar e remover produtos.**
-  - **Atualizar o total de forma dinâmica.**
-- **Adicionar página de checkout.**
-- **Integrar com uma API para exibição dinâmica de produtos.**
-- **Melhorar a acessibilidade para garantir compatibilidade com leitores de tela.**
+- **JavaScript: Para interatividade.**
   
 # 📸 Demonstração.
-![Screenshot](https://github.com/user-attachments/assets/31051e94-f017-4476-8e1c-82763886abb7)
 
