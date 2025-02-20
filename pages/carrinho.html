@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crie sua conta | PC Master</title>
+    <title>Meu Carrinho | PC Master</title>
+
+    <!-- Link para o arquivo CSS -->
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/login.css">
+
     <link rel="icon" href="../assets/imagens/favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -60,40 +62,46 @@
             <li><a href="#">Atendimento ao Cliente</a></li>
         </ul>
     </nav>
+    <main class="carrinho_container">
+        <h1>MEU CARRINHO</h1>
 
-    <!-- Formulário de Cadastro -->
-    <main>
-        <section class="login-container">
-            <div class="login-form">
-                <h2>Criar uma conta</h2>
-                <form action="#" method="POST">
-                    <div class="input-group">
-                        <label for="nome">Nome Completo:</label>
-                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
-                    </div>
-                    <div class="input-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" placeholder="Digite seu email" required>
-                    </div>
-                    <div class="input-group">
-                        <label for="senha">Senha:</label>
-                        <input type="password" id="senha" name="senha" placeholder="Crie sua senha" required>
-                    </div>
-                    <div class="input-group">
-                        <label for="confirmar-senha">Confirmar Senha:</label>
-                        <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="Confirme sua senha" required>
-                    </div>
-                    <button type="submit" class="btn-login">Cadastrar</button>
-                </form>
-                <div class="links">
-                    <a href="login.html">Já tem uma conta? Entrar</a>
-                </div>
+        <div id="carrinho">
+            <table id="tabela-carrinho">
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Preço</th>
+                        <th>Quantidade</th>
+                        <th>Total</th>
+                        <th>Remover</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Itens do carrinho serão inseridos aqui dinamicamente -->
+                </tbody>
+            </table>
+
+            <div id="total-container">
+                <h3>Total: <span id="total-preco">R$ 0,00</span></h3>
+                <button id="finalizar-compra" class="btn-finalizar">Finalizar Compra</button>
             </div>
-        </section>
+        </div>
     </main>
 
-    <!-- Rodapé -->
-    <footer>
+    <section class="newsletter">
+        <div>
+            <h4 class="newsletter_title">Newsletter</h4>
+            <p>Receba ofertas exclusivas no seu e-mail</p>
+        </div>
+        <form class="newsletter_form">
+            <input class="newsletter_input newsletter_input--name" placeholder="Qual é o seu nome?">
+            <input type="email" class="newsletter_input newsletter_input_email" placeholder="Digite seu email">
+            <button class="newsletter_button">Cadastrar</button>
+        </form>
+    </section>  
+    
+     <!-- Rodapé -->
+     <footer>
         <div class="footer_menu">
             <div class="footer_section">
                 <h4 class="footer_section_title">Institucional</h4>
@@ -127,7 +135,8 @@
         <p>Desenvolvido por <a href="https://github.com/all3x-martins" target="_blank" rel="noopener noreferrer">Allexander</a></p>
         </div>
     </footer>
-
-    <script src="../js/script.js"></script>
-</body>
+<body>
+    
+<script src="../js/carrinho.js" id="carrinho-script"></script>
+<script src="../js/script.js"></script>
 </html>
